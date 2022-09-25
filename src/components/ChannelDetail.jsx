@@ -23,7 +23,22 @@ const ChannelDetail = () => {
     },[id])
 
   return (
-    <div style={{color: 'white'}}>{id}</div>
+    <Box minHeight="95vh">
+      <Box>
+          <div style={{
+            background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(153,255,252,1) 72%, rgba(0,217,205,1) 99%)',
+            zIndex: 10,
+            height: '300px',
+              }}
+            />
+            <ChannelCard channelDetail={channelDetail} marginTop="-110px"/>
+      </Box>
+      <Box display="flex" p="2">
+          <Box sx={{ mr: { sm: '100px' }}} />
+            <Videos videos={videos}/>
+      </Box>
+
+    </Box>
   )
 }
 

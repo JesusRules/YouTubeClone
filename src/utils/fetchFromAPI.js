@@ -7,7 +7,7 @@ const options = {
     // url: BASE_URL, used on fetchFromAPI function
     params: {
         //dont need others
-      maxResults: '50'
+      maxResults: '50' //goes on all search queries
     },
     headers: {
       'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
